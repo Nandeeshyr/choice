@@ -40,7 +40,7 @@ QUIZ WEBSITE
 
 </div>
 */
-/*
+/*//app.component.ts
 //contains the business logic of app component
 import { Component } from '@angular/core';
 /*
@@ -82,4 +82,34 @@ export class AppComponent {
     name= 'Angular';
 }
 
+*/
+/*//app.module.ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+//Line 1: Imports NgModule class to define metadata of the module
+//Line 2: Imports BrowserModule class which is needed to run the application inside the browser
+//Line 3: Imports AppRoutingModule class to define the routes in the app
+//Line 4: Imports AppComponent class from app.component.ts file. No need to mention .ts extension as Angular by default considers the file as .ts file
+//Line 7: Declarations property should contain all user-defined components, directives, pipes classes to be used across the application. We have added our AppComponent class here
+//Line 10: Imports property should contain all module classes to be used across the application
+//Line 14: Providers property should contain all service classes. We will discuss services later in this course
+//Line 15: Bootstrap declaration should contain the root component to load. In this example, AppComponent is the root component which will be loaded in the HTML page
 */
