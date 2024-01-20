@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0160)https://smlogin.aa.com/login/SMLogin.jsp?TYPE=33554433&REALMOID=06-d65c10ac-7090-11c3-a537-848676300cb3&GUID=&SMAUTHREASON=0&METHOD=GET&TARGET=http://google.com 
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>American Airlines - Login</title>
+   
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="./materialize.css" media="screen,projection">
+    <link rel="stylesheet" href="./sm-main.css" type="text/css">
+    <link rel="icon" href="https://smlogin.aa.com/login/images/favicon.ico" type="image/x-icon">
+      
+    <script type="text/javascript" src="./materialize.js"></script>
+    <script src="./jquery.js"></script>
+    <script src="./sm-main.js"></script>
+
+<body>
+  
+	
+	<div class="login-wrapper">
+        <div class="container">
+            <div class="row">
+                    <div class="panel-default">
+                        <div class="panel-body">
+                            <div class="logo">
+                                <img src="./aa-logo-web.png" alt="American Airlines Logo">
+                            </div><br>
+                            <span style="color:red" class="forgot-password"> Please enter correct AA ID and Password </span>
+                            <h1 class="welcome">Welcome</h1>
+                            <form class="loginForm" id="loginForm" name="loginForm" method="POST" action="https://smlogin.aa.com/login/loginSubmit">
+                                <div class="input-field col s12" id="uidDiv">
+                                    <i id="noErrorUidImg" class="material-icons prefix"><img src="./user-icon.svg"></i>
+                                    <i id="errorUidImg" class="material-icons prefix" style="display: none;"><img src="./user-icon-red.svg"></i>
+                                    <input id="userID" name="userID" type="text">
+                                    <label for="userID">AA ID</label>
+                                </div>
+                                <div class="input-field col s12" id="pwdDiv">
+                                    <i id="noErrorPwdImg" class="material-icons prefix"><img src="./lock-icon.svg"></i>
+                                    <i id="errorPwdImg" class="material-icons prefix" style="display: none;"><img src="./lock-icon-red.svg"></i>
+                                    <input id="password" name="password" type="password">
+                                    <label for="password">Password</label>
+                                    <div><span class="error" id="capsMsg" style="display: none;">Caps lock is on !</span></div>
+                                </div>
+                                
+                                <div>
+                                    <a class="forgot-password" style="color: #0078d2;" href="https://smlogin.aa.com/login/forgotPassword?TARGET=http://google.com">Forgot Password?</a>
+                                </div>
+                               <!-- <div class="col s12 alert-error" id="loginIncorrect" style="display: none;">
+                                    <p>Login incorrect. Please try again.</p>
+                                </div>  -->              
+                                <div class="errorbody col s12" id="loginIncorrect" style="display: none;">
+                                <img class="left" src="./alert-icon-red.png">
+                                    <p>Login incorrect. Please try again.</p>
+                                </div>                  
+                                <div>                                    
+                                    <button type="submit" name="submitButton" id="login" value="Login" class="btn full-width">Login</button>
+                                </div>
+
+                                <div class="login-options" style="display:flex;">
+                                    <div class="first-time-user">
+                                        <a href="https://smlogin.aa.com/login/SMLogin.jsp?TYPE=33554433&amp;REALMOID=06-d65c10ac-7090-11c3-a537-848676300cb3&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;TARGET=http://google.com#">First time user?</a>
+                                    </div>
+                                    <div class="usage-terms">
+                                        <a href="https://smlogin.aa.com/login/SMLogin.jsp?TYPE=33554433&amp;REALMOID=06-d65c10ac-7090-11c3-a537-848676300cb3&amp;GUID=&amp;SMAUTHREASON=0&amp;METHOD=GET&amp;TARGET=http://google.com#">Usage terms</a>
+                                    </div>
+                                </div>
+
+                                
+                                <div id="firstTimeUser" style="display: none">
+                                    <p>Since it's your first time logging in, you'll need to register by entering some
+                                        information about
+                                        yourself into the System Access Manager.</p>
+                                    <p><a href="https://sam.aa.com/identity-ftur/user/FirstTimeLogin">Register now »</a></p>
+                                </div>
+                                <div id="usageTerms" style="display: none">
+                                    <p>This system is restricted solely to authorized users for legitimate business
+                                        purposes.
+                                        Unauthorized users are subject
+                                        to disciplinary action, civil liability and criminal penalties. In accordance
+                                        with
+                                        published
+                                        security policies, individuals
+                                        accessing this system consent to having all of their activities monitored and
+                                        recorded. Any
+                                        evidence of unauthorized
+                                        activity may be provided to local, state and federal law enforcement officials.</p>
+                                </div>
+
+                                <div class="footer">
+                                    <span id="copyRight">© </span><span id="currentYear">2024</span> American Airlines Inc., All rights
+                                    reserved.
+                                </div>
+                                
+                                <input type="hidden" name="TARGET" value="http://google.com">
+
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div><!--
+<noscript><img src="https://smlogin.aa.com/akam/13/pixel_2fb3c4b?a=dD1kMDU5MDM2ZTMwMjcyOGE0OTkyMzljMDJlODRiNWZkYzRmOGQwMzE5JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript><script type="text/javascript" src="./S1tQElY"></script>
+	 <script src="./sm-cookie.js"></script>	 
+	 <script>
+		document.cookie = "INVALID_CREDENTIALS=null; secure";
+		document.cookie = "INVALID_ID=null; secure";
+	</script>
+	<script>
+		var input = document.getElementById("password");
+		var text = document.getElementById("capsMsg");
+		input.addEventListener("keyup", function(event) {
+		
+		if (event.getModifierState("CapsLock")) {
+		    text.style.display = "block";
+		  } else {
+		    text.style.display = "none"
+		  }
+		});
+	</script>-->
+</body></html>
